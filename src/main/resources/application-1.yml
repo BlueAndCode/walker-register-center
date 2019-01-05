@@ -1,0 +1,13 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: walker1
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://walker2:8762/eureka/,http://walker3:8763/eureka/
+spring:
+  application:
+    name: eurka-server
